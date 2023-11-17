@@ -1,0 +1,104 @@
+body {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  min-height: 100vh;
+}
+
+.view-buttons {
+  display: flex;
+
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.active {
+  background: #535bf2;
+}
+
+.view-buttons button:nth-child(1) {
+  border-radius: 5px 0px 0px 5px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.view-buttons button:nth-child(2) {
+  border-radius: 0px 5px 5px 0px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+/* /////////////////////////////////////////// */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  cursor: pointer;
+}
+header img {
+  height: 90px;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.detail-outer {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.detail-inner {
+  background-color: black;
+  height: 90%;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.detail-inner img {
+  width: 100%;
+}
+
+.detail-inner .close span {
+  background-color: gray;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.starus {
+  background: #535bf2;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pagination .active {
+  background-color: #535bf2;
+
+  border-radius: 5px;
+}
+
+.pagination .active a {
+  padding: 10px;
+}
